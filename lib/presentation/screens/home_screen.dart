@@ -21,7 +21,19 @@ class HomeScreen extends StatelessWidget {
             subtitle: const Text('Simple state manager'),
             trailing: const Icon(Icons.arrow_forward_ios_rounded),
             onTap: () => context.push('/bloc'),
-          )
+          ),
+
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Divider()
+          ),
+
+          ListTile(
+            title: const Text('New User'),
+            subtitle: const Text('Forms manager'),
+            trailing: const Icon(Icons.arrow_forward_ios_rounded),
+            onTap: () => context.push('/new-user'),
+          ),
         ],
       ),
     );
